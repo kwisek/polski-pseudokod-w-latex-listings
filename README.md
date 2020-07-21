@@ -20,4 +20,4 @@ Gotowe! Możesz stworzyć środowisko pseudokodu poleceniem
 Dla, dopóki, fałsz, funkcja, gdy, jeśli, jeżeli, prawda, w przeciwnym wypadku, wtedy, wykonaj, wykonuj, wyświetl, zakończ, zrób, zwróć
 
 
-Zajrzyj do (example.tex)[https://github.com/kwisek/polski-pseudokod-w-latex-listings/blob/master/example.tex], jeśli chcesz zobaczyć przykład użycia. 
+Zajrzyj do [example.tex](https://github.com/kwisek/polski-pseudokod-w-latex-listings/blob/master/example.tex), jeśli chcesz zobaczyć przykład użycia. 
