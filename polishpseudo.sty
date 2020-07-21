@@ -1,0 +1,17 @@
+\RequirePackage{listings}
+\RequirePackage{polski}
+
+
+\newcommand\keywordstyle[1]{{\bfseries{#1}}} % W tym miejscu mozna zmienic kolor slow kluczowych (domyslnie czarny pogrubiony) - to samo nalezy zrobic dla domyslnych dla listings (nie mapowanych) slow kluczowych!
+
+\lstdefinelanguage{pseudokod}{
+	sensitive = false,
+	morecomment = [s]{/*}{*/},
+	morecomment=[l]{//},
+	extendedchars = true,
+	literate = {ą}{{\k{a}}}1 {Ą}{{\k{A}}}1 {ę}{{\k{e}}}1 {Ę}{{\k{E}}}1 {ó}{{\'o}}1 {Ó}{{\'O}}1 {ś}{{\'s}}1 {Ś}{{\'S}}1 {ł}{{\l{}}}1 {Ł}{{\L{}}}1 {ż}{{\.z}}1 {Ż}{{\.Z}}1 {ź}{{\'z}}1 {Ź}{{\'Z}}1 {ć}{{\'c}}1 {Ć}{{\'C}}1 {ń}{{\'n}}1 {Ń}{{\'N}}1 {dopóki}{{\keywordstyle{dop{\'o}ki}}}6 {Dopóki}{{\keywordstyle{Dop{\'o}ki}}}6 {fałsz}{{\keywordstyle{fa{\l{}}sz}}}5 {Fałsz}{{\keywordstyle{Fa{\l{}}sz}}}5 {jeśli}{{\keywordstyle{je\'{s}li}}}5 {Jeśli}{{\keywordstyle{Je\'{s}li}}}5 {jeżeli}{{\keywordstyle{je\.{z}eli}}}6 {Jeżeli}{{\keywordstyle{Je\.{z}eli}}}6 {wpw}{{\keywordstyle{w przeciwnym wypadku}}}{20} {Wpw}{{\keywordstyle{W przeciwnym wypadku}}}{20} {wyświetl}{{\keywordstyle{wy{\'s}wietl}}}8 {Wyświetl}{{\keywordstyle{Wy{\'s}wietl}}}8 {zakończ}{{\keywordstyle{zako{\'n}cz}}}7 {Zakończ}{{\keywordstyle{Zako{\'n}cz}}}7 {zrób}{{\keywordstyle{Zr{\'o}b}}}4 {Zrób}{{\keywordstyle{zr{\'o}b}}}4 {zwróć}{{\keywordstyle{zwr{\'o}{\'c}}}}5 {Zwróć}{{\keywordstyle{Zwr{\'o}{\'c}}}}5 {=}{$\leftarrow{}$}{1} {==}{$={}$}{1},
+	keywords = {gdy, dla, prawda, wykonaj, wykonuj, wtedy, funkcja},
+    tabsize = 3
+}
+
+\endinput

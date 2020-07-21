@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{polishpseudo}
+
+\renewcommand{\lstlistingname}{Przykład} 
+
+\begin{document}
+
+\begin{lstlisting}[language = pseudokod, caption = \ ]
+funkcja wynik( i ) 
+	jeżeli i < 3 
+		zwróć 1 i zakończ; 
+	wpw
+		jeżeli mod 2 == 0 
+			zwróć wynik(i - 3) + wynik(i - 1) + 1
+		wpw
+			zwróć wynik(i- 1) mod 7
+\end{lstlisting}
+
+\vspace{40pt}
+
+\begin{lstlisting}[language = pseudokod, caption = \ ]
+W[0] = 1 
+W[1] = 1 
+W[2] = 1 
+max_wart = 1 
+dla i == 3, 4, ..., 1 000 wykonuj 
+	jeżeli i mod 2 == 0 
+		W[i] = W[i - 1] + W[i - 3] + 1
+	wpw 
+		W[i] = W[i - 1] mod 7
+	jeżeli W[i] > max_wart 
+		W[i] = max_wart
+zwróć max_wart 
+\end{lstlisting}
+
+\end{document}
